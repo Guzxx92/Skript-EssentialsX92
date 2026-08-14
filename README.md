@@ -1,5 +1,8 @@
 # Skript-EssentialsX92
-Essentialsx - Skript version
+Essentialsx - SkriptLang Version
 
-Requirement: 
-- Skript: [Skript](https://github.com/skriptlang/skript)
+**Requirement:**
+- Skript: [Download](https://github.com/skriptlang/skript)
+- Skript-Gui:
+- Skbee:
+
