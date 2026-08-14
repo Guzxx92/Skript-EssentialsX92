@@ -11,6 +11,6 @@ You can configure lore, prefix, and more on config.sk, so.. have fun man...
 - Skript-Gui: [Download](https://github.com/APickledWalrus/skript-gui)
 - Skbee: [Download](https://github.com/ShaneBeee/SkBee)
 
-![Wow](https://files.catbox.moe/sylrip.jpeg)
+![Wow](./Wow.jpeg)
 
 Skript has been tested on the latest version of Minecraft (1.26.x) and latest version of skript.
