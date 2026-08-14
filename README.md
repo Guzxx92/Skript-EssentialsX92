@@ -1,6 +1,8 @@
 # Skript-EssentialsX92
 Essentialsx - SkriptLang Version
 
+![Wow](./Wow.jpeg)
+
 ## Description
 Cant customization Your plugin ? With ts you can customize anything, wanna change somethin ? js do whatever you want. Easy to configure!
 
