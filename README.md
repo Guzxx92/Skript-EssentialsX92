@@ -2,9 +2,9 @@
 Essentialsx - SkriptLang Version
 
 ## Description
-Cant customization Your plugin ? With ts you can customize anything, wanna change somethin ? js do whatever you want. 
+Cant customization Your plugin ? With ts you can customize anything, wanna change somethin ? js do whatever you want. Easy to configure!
 
-You can configure lore ore something in config.sk, so.. have fun man...
+You can configure lore, prefix, and more on config.sk, so.. have fun man...
 
 **Requirement:** 
 - Skript: [Download](https://github.com/skriptlang/skript) (Latest version)
