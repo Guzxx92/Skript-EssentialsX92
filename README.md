@@ -11,4 +11,4 @@ You can configure lore, prefix, and more on config.sk, so.. have fun man...
 - Skript-Gui: [Download](https://github.com/APickledWalrus/skript-gui)
 - Skbee: [Download](https://github.com/ShaneBeee/SkBee)
 
-Skript has been tested on the latest version of Minecraft (1.26.x) and the latest version of skript.
+Skript has been tested on the latest version of Minecraft (1.26.x) and latest version of skript.
