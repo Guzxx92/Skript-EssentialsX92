@@ -4,7 +4,7 @@ Essentialsx - SkriptLang Version
 ![Wow](./Wow.jpeg)
 
 ## Description
-Cant customization Your plugin ? With ts you can customize anything, wanna change somethin ? js do whatever you want. Easy to configure!
+Cant customization Your essentials plugin ? With ts you can customize anything, wanna change somethin ? js do whatever you want. Easy to configure!
 
 You can configure lore, prefix, and more on config.sk, so.. have fun man...
 
