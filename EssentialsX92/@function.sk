@@ -1,0 +1,63 @@
+function formatMoney(n: number) :: text:
+    if {_n} >= 1000000000:
+        return "%round({_n} / 1000000000, 1)%B"
+    if {_n} >= 1000000:
+        return "%round({_n} / 1000000, 1)%M"
+    if {_n} >= 1000:
+        return "%round({_n} / 1000, 1)%K"
+    return "%{_n}%"
+
+function parseMoney(input: text) :: number:
+    set {_text} to {_input} in lowercase
+    set {_mult} to 1
+    if {_text} ends with "k":
+        set {_mult} to 1000
+        replace all "k" with "" in {_text}
+    else if {_text} ends with "m":
+        set {_mult} to 1000000
+        replace all "m" with "" in {_text}
+    else if {_text} ends with "b":
+        set {_mult} to 1000000000
+        replace all "b" with "" in {_text}
+    set {_price} to {_text} parsed as number
+    if {_price} is not set:
+        return 0
+    return {_price} * {_mult}
+
+function getMoney(id: text) :: number:
+    if {money::%{_id}%} is not set:
+        set {money::%{_id}%} to 0
+    return {money::%{_id}%}
+
+function setMoney(id: text, amount: number):
+    set {money::%{_id}%} to {_amount}
+    if {money::%{_id}%} < 0:
+        set {money::%{_id}%} to 0
+
+function addMoney(id: text, amount: number):
+    if {_amount} > 0:
+        add {_amount} to {money::%{_id}%}
+
+function removeMoney(id: text, amount: number):
+    if {_amount} > 0:
+        remove {_amount} from {money::%{_id}%}
+        if {money::%{_id}%} < 0:
+            set {money::%{_id}%} to 0
+
+function cekMoney(id: text, amount: number) :: boolean:
+    set {_balance} to money({_id})
+    if {_balance} >= {_amount}:
+        return true
+    return false
+
+function isSpam(p: player) :: boolean:
+    set {_uuid} to "%uuid of {_p}%"
+    if {ah::last_click::%{_uuid}%} is set:
+        set {_diff} to difference between {ah::last_click::%{_uuid}%} and now
+        if {_diff} < 0.3 seconds:
+            delete {ah::last_click::%{_uuid}%}
+            close {_p}'s inventory
+            send "{@prefix}&cSpam klik terdeteksi! GUI telah ditutup." to {_p}
+            return true
+    set {ah::last_click::%{_uuid}%} to now
+    return false
