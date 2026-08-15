@@ -1,0 +1,9 @@
+on load:
+
+##₊ ──୨─────────── 𖦹🍀 Motd 2 ୭˚.──────────୨────
+    set {motd.line1} to "➜ <##51AFFB>           &lꜱᴏᴜʟꜱᴄᴇɴᴛ ᴅᴇᴅᴏᴄᴏ"
+    set {motd.line2} to "          <##FF336E>         🗡 &7ᴍɪɴᴇᴄʀᴀꜰᴛ ꜱᴜʀᴠɪᴠᴀʟ sᴇʀᴠᴇʀ <##FF336E>🏹"
+
+##₊ ──୨─────────── 𖦹🍀 On Chat ୭˚.──────────୨────       
+    set {metions.sound} to "minecraft:block.note_block.bell"
+    set {metions.color} to <##336CFF>
