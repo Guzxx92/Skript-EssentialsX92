@@ -1,0 +1,2 @@
+on server list ping:
+    set motd to "%{motd.line1}%%nl%%{motd.line2}%"
